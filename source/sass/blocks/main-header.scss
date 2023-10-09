@@ -1,0 +1,20 @@
+.main-header {
+  min-height: 60px;
+  margin-left: 20px;
+
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+  }
+}
+
+
+.main-header__logo-image {
+  display: block;
+  padding: 12px 0;
+}

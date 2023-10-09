@@ -1,7 +1,12 @@
 /* GLOBAL */
-@import "global/variables";
-@import "global/global";
-@import "global/fonts";
+@import "./global/variables.scss";
+@import "./global/global.scss";
+@import "./global/fonts.scss";
 
 /* BLOCKS */
-@import "blocks/header";
+@import "./blocks/main-header.scss";
+@import "./blocks/page-wrapper.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/user-list.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/main-container.scss";

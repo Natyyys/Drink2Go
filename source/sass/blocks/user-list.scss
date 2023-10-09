@@ -1,0 +1,27 @@
+.user-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin: 0;
+  padding: 0;
+  margin-top: -56px;
+  padding-right: 60px;
+  margin-left: auto;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+.user-list__item {
+  padding: 18px 22px;
+}
+
+.user-list__text {
+  display: none;
+}
+
+.uuser-list__link {
+  width: 60px;
+  height: 60px;
+}

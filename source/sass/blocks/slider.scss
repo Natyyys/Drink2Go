@@ -1,0 +1,48 @@
+.slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider__item:nth-child(1) {
+  background-color: #F3EBE1;
+}
+
+.slider__item:nth-child(2) {
+  background-color: #EAE6FC;
+}
+
+.slider__item:nth-child(3) {
+  background-color: #E5E6E8;
+}
+
+.slider__button {
+  padding: 318px 5px 4px;
+  border: none;
+  cursor: pointer;
+  background: transparent url("/images/arrow-slider.svg") center / 11px 20px no-repeat;
+}
+
+.slider__button-next {
+  transform: rotate(180deg);
+}
+
+.slider__pagination-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.slider__pagination-button {
+  width: 62px;
+  height: 4px;
+  background-color: #7859cf;
+  border: none;
+}
+
+.slider__pagination-item {
+  margin: 0 8px;
+}

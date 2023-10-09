@@ -1,1 +1,37 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
