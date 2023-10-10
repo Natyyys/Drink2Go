@@ -1,0 +1,40 @@
+.select {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 0 15px 7px;
+}
+
+.select__title {
+  font-family: $font-family-montserrat-semi-bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.select__control{
+  font-family: $font-family-montserrat-semi-bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-base-primary;
+  width: 165px;
+  min-height: 32px;
+  padding: 5px 30px 5px 8px;
+  border: none;
+  background-color: transparent;
+  appearance: none;
+  background-image: url("/images/catalog/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 6px;
+  background-position: center right;
+  background-position-x: calc(100% - 10px);
+
+  &:hover,
+  &:focus {
+    background-color: $color-base-secondary;
+    border-radius: 4px;
+    outline: none;
+  }
+}
