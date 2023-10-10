@@ -1,0 +1,64 @@
+.cards-item {
+  padding: 40px 20px 20px;
+  background-color: $color-white-base;
+}
+
+.cards-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cards-link {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cards-info {
+  text-align: start;
+}
+
+.card-image {
+  margin-bottom: 24px;
+}
+
+.cards-title {
+  font-family: $font-family-montserrat-bold;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.cards-description {
+  margin-bottom: 16px;
+  padding-right: 10px;
+  margin-top: 0;
+}
+
+.cards-buy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-price{
+  font-family: $font-family-montserrat-semi-bold;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.cards-button {
+  padding: 8px 20px;
+  font-family: $font-family-montserrat-regular;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cards-button-text {
+  margin-left: 3px;
+}
