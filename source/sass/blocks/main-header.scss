@@ -1,6 +1,5 @@
 .main-header {
   min-height: 60px;
-  margin-left: 20px;
 
   @media (max-width: $mobile-width-only) {
     display: flex;
@@ -13,8 +12,11 @@
   }
 }
 
+.main-header__logo-text {
+  display: none;
+}
 
-.main-header__logo-image {
-  display: block;
-  padding: 12px 0;
+.main-header__container-logo {
+  width: max-content;
+  padding: 12px 20px;
 }

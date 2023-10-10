@@ -5,6 +5,7 @@
     <title>Интернет магазин кофейных напитков Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="preload" href="fonts/montserrat400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat500.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat600.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -13,123 +14,122 @@
 
   <body class="page-wrapper">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <picture>
-          <img class="main-header__logo-image" src="images/logo/logo-small.svg" width="32" height="36" alt="Логотип интернет-магазина Drink2Go">
-        </picture>
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle js-toggle-button" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Каталог</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Доставка</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">О нас</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="main-header__container">
+        <div class="main-header__container-logo">
+          <a class="main-header__logo" href="index.html">
+            <picture>
+              <img class="main-header__logo-image" src="images/logo/logo-small.svg" width="32" height="36" alt="Логотип интернет-магазина Drink2Go">
+            </picture>
+          </a>
+          <span class="main-header__logo-text">Интернет-магазин кофейных напитков</span>
+        </div>
 
-        <ul class="user-list">
-          <li class="user-list__item">
-            <a class="user-list__link" href="#">
-              <svg class="user-list__icon" width="16" height="16" aria-hidden="true" focusable="false" aria-label="Войти в личный кабинет">
-                <use href="images/icons/stack.svg#user"></use>
-              </svg>
-              <span class="user-list__text">Войти</span>
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link" href="#">
-              <svg class="user-list__icon" width="16" height="16" aria-hidden="true" focusable="false" aria-label="Просмотреть корзину">
-                <use href="images/icons/stack.svg#basket-header"></use>
-              </svg>
-              <span class="user-list__text">Корзина</span>
-            </a>
-          </li>
-        </ul>
+        <nav class="main-nav">
+          <button class="main-nav__toggle js-toggle-button" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Доставка</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О нас</a>
+            </li>
+          </ul>
+        </nav>
+
+          <ul class="user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">
+                <svg class="user-list__icon" width="16" height="16" aria-hidden="true" focusable="false" aria-label="Войти в личный кабинет">
+                  <use href="images/icons/stack.svg#user"></use>
+                </svg>
+                <span class="user-list__text">Войти</span>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">
+                <svg class="user-list__icon" width="16" height="16" aria-hidden="true" focusable="false" aria-label="Просмотреть корзину">
+                  <use href="images/icons/stack.svg#basket-header"></use>
+                </svg>
+                <span class="user-list__text">Корзина</span>
+              </a>
+            </li>
+          </ul>
+      </div>
     </header>
 
     <main class="main-container">
       <h1 class="visually-hidden">Интернет магазин кофейных напитков Drink2Go</h1>
-
-      <section class="slider">
-        <h2 class="visually-hidden">Новинки ассортимента.</h2>
-        <ol class="slider__list">
-          <li class="slider__item">
-            <picture>
-              <img class="slider__image" src="images/slider/flat-white-mobile.png" srcset="images/slider/flat-white-mobile@2.png 2x" width="280" height="280" alt="Декаф Флэт Уайт">
-            </picture>
-            <h3 class="slider__badge">Новинка!</h3>
-            <p class="slider__title">Декаф Флэт Уайт</p>
+      <section class="slider swiper">
+        <h2 class="visually-hidden">Новинки нашего ассортимента</h2>
+        <ol class="slider__list swiper-wrapper">
+          <li class="slider__item slider__item--decaf swiper-slide">
+            <div class="slider__image-container">
+              <picture>
+                <source srcset="images/slider/flat-white-desktop.png 1x, images/slider/flat-white-desktop@2x.png 2x" width="600" height="600" type="image/png" media="(min-width: 1440px)">
+                <source srcset="images/slider/flat-white-tablet.png 1x, images/slider/flat-white-tablet@2x.png 2x" width="476" height="476" type="image/png" media="(min-width: 768px)">
+                <img class="slider__image" src="images/slider/flat-white-mobile.png" width="280" height="280" srcset="images/slider/flat-white-mobile@2x.png 2x" alt="Декаф Флэт Уайт.">
+              </picture>
+            </div>
+            <span class="slider__badge">Новинка!</span>
+            <h3 class="slider__title">Декаф Флэт Уайт</h3>
             <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-            <div class="slider__price">
-              <del class="slider__price-old">295₽</del>
-              <span class="slider__price-new">225₽</span>
-              <button class="slider__price-button" type="button">Заказать</button>
+            <div class="slider__price-container">
+              <del class="slider__price">295₽</del>
+              <span class="slider__price--discount">225₽</span>
+              <button class="slider__price-button button button--primary" type="button">Заказать</button>
             </div>
           </li>
-          <li class="slider__item">
-            <picture>
-              <img class="slider__image" src="images/slider/lavender-mobile.png" srcset="images/slider/lavender-mobile@2.png 2x" width="280" height="280" alt="Лавандовый Латте">
-            </picture>
-            <h3 class="slider__badge">Новинка!</h3>
-            <p class="slider__title">Лавандовый Латте</p>
+
+          <li class="slider__item slider__item--lavender swiper-slide">
+            <div class="slider__image-container">
+              <picture>
+                <source srcset="images/slider/lavender-desktop.png 1x, images/slider/lavender-desktop@2x.png 2x" width="600" height="600" type="image/png" media="(min-width: 1440px)">
+                <source srcset="images/slider/lavender-tablet.png 1x, images/slider/lavender-tablet@2x.png 2x" width="476" height="476" type="image/png" media="(min-width: 768px)">
+                <img class="slider__image" src="images/slider/lavender-mobile.png" width="280" height="280" srcset="images/slider/lavender-mobile@2x.png 2x" alt="Лавандовый Латте.">
+              </picture>
+            </div>
+            <span class="slider__badge">Новинка!</span>
+            <h3 class="slider__title">Лавандовый Латте</h3>
             <p class="slider__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-            <div class="slider__price">
-              <del class="slider__price-old">285₽</del>
-              <span class="slider__price-new">265₽</span>
-              <button class="slider__price-button" type="button">Заказать</button>
+            <div class="slider__price-container">
+              <del class="slider__price">285₽</del>
+              <span class="slider__price--discount">265₽</span>
+              <button class="slider__price-button button button--primary" type="button">Заказать</button>
             </div>
           </li>
-          <li class="slider__item">
-            <picture>
-              <img class="slider__image" src="images/slider/espresso-mobile.png" srcset="images/slider/espresso-mobile@2.png 2x" width="280" height="280" alt="Тройной Эспрессо">
-            </picture>
-            <h3 class="slider__badge">Новинка!</h3>
-            <p class="slider__title">Тройной Эспрессо</p>
+
+          <li class="slider__item slider__item--espresso swiper-slide">
+            <div class="slider__image-container">
+              <picture>
+                <source srcset="images/slider/espresso-desktop.png 1x, images/slider/espresso-desktop@2x.png 2x" width="600" height="600" type="image/png" media="(min-width: 1440px)">
+                <source srcset="images/slider/espresso-tablet.png 1x, images/slider/espresso-tablet@2x.png 2x" width="476" height="476" type="image/png" media="(min-width: 768px)">
+                <img class="slider__image" src="images/slider/espresso-mobile.png" width="280" height="280" srcset="images/slider/espresso-mobile@2x.png 2x" alt="Тройной Эспрессо.">
+              </picture>
+            </div>
+            <span class="slider__badge">Новинка!</span>
+            <h3 class="slider__title">Тройной Эспрессо</h3>
             <p class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-            <div class="slider__price">
-              <del class="slider__price-old">395₽</del>
-              <span class="slider__price-new">375₽</span>
-              <button class="slider__price-button" type="button">Заказать</button>
+            <div class="slider__price-container">
+              <del class="slider__price">395₽</del>
+              <span class="slider__price--discount">375₽</span>
+              <button class="slider__price-button button button--primary" type="button">Заказать</button>
             </div>
           </li>
         </ol>
-        <button class="slider__button slider__button-previous" type="button">
-          <span class="visually-hidden">Предыдущий слайд.</span>
-        </button>
-        <button class="slider__button slider__button-next" type="button">
-          <span class="visually-hidden">Следующий слайд.</span>
-        </button>
-        <div class="slider__pagination">
-          <ol class="slider__pagination-list">
-            <li class="slider__pagination-item">
-              <button class="slider__pagination-button lider__pagination-button--current" type="button">
-                <span class="visually-hidden">Первый слайд.</span>
-              </button>
-            </li>
-            <li class="slider__pagination-item">
-              <button class="slider__pagination-button" type="button">
-                <span class="visually-hidden">Второй слайд.</span>
-              </button>
-            </li>
-            <li class="slider__pagination-item">
-              <button class="slider__pagination-button" type="button">
-                <span class="visually-hidden">Третий слайд.</span>
-              </button>
-            </li>
-          </ol>
-        </div>
+
+        <button class="slider__button-prev swiper-button-prev" type="button" aria-label="Предыдущий слайд"></button>
+        <button class="slider__button-next swiper-button-next" type="button" aria-label="Следующий слайд"></button>
+        <div class="swiper-pagination"></div>
       </section>
+
 
       <section class="features">
         <h2 class="features__title">Преимущества</h2>
@@ -416,6 +416,7 @@
 
     </footer>
 
-    <script src="js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js" type="module"></script>
   </body>
 </html>

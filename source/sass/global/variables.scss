@@ -2,7 +2,28 @@
 $mobile-width: 320px;
 $mobile-width-only: 767px;
 $tablet-width: 768px;
-$desktop-width: 1200px;
+$only-tablet-width: 1439px;
+$desktop-width: 1440px;
 
 // Font
-$main-font: "Montserrat", sans-serif;
+$font-family-montserrat-regular: "Montserrat Regular", "Arial", sans-serif;
+$font-family-montserrat-medium: "Montserrat Medium", "Arial", sans-serif;
+$font-family-montserrat-semi-bold: "Montserrat Semi Bold", "Arial", sans-serif;
+$font-family-montserrat-bold: "Montserrat Bold", "Arial", sans-serif;
+
+// Colors
+$color-white-base: #ffffff;
+$color-base-grey: #bdbdbd;
+$color-black-base: #333333;
+$color-base-primary: #7859cf;
+$color-base-secondary: #f0ebff;
+
+$color-lightest-grey: #f8f8f8;
+$color-flat-white: #f3ebe1;
+$color-lavender-latte: #eae6fc;
+$color-espresso: #e5e6e8;
+
+$color-primary-opacity: rgba(120, 89, 207, 0.25);
+$color-primary-lighter: #9070ec;
+$color-primary-darker: #593cac;
+$color-light-grey: #e2e2e2;

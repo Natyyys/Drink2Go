@@ -1,0 +1,46 @@
+.button {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #7859cf;
+
+    &:disabled {
+      background-color: #bdbdbd;
+    }
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: #9070ec;
+    }
+
+    &:active {
+      color: #ffffff;
+      background-color: #593cac;
+    }
+  }
+
+  .button--primary {
+    color: #ffffff;
+    background-color: $color-base-primary;
+
+    &:disabled {
+      background-color: $color-base-grey;
+    }
+  }
+
+  .button--secondary {
+    color: #7859cf;
+    background-color: #ffffff;
+  }
+
+  .button--secondary:disabled {
+    color: #ffffff;
+    background-color: #e2e2e2;
+  }

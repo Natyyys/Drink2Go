@@ -1,4 +1,6 @@
 /* в этот файл добавляет скрипты*/
+import './slider.js'
+
 const CLASS_NAV_OPEN = 'main-nav--opened';
 const CLASS_NAV_JS = 'main-nav--js';
 
