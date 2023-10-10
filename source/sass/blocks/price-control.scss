@@ -1,0 +1,84 @@
+.price-control {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  padding: 1px 1px 1px 3px;
+  margin-bottom: 30px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 33px;
+    margin-left: -10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%);
+    width: 8px;
+    height: 2px;
+    background-color: $color-base-grey;
+
+    @media (min-width: $desktop-width) {
+      left: 50%;
+    }
+  }
+}
+
+.price-control__input {
+  font-family: $font-family-montserrat-medium;
+  font-size: 16px;
+  line-height: 24px;
+  width: 118px;
+  height: 40px;
+  border: 2px solid $color-primary-lighter;
+  border-radius: 4px;
+  text-align: center;
+  padding: 8px 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+  }
+
+  &:focus {
+    border-color: $color-primary-darker;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $color-lightest-grey;
+    border-color: $color-light-grey;
+    color: $color-base-grey;
+  }
+
+  &--from {
+    color: $color-light-grey;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+    }
+  }
+
+  &--to {
+    color: $color-black-base;
+    font-family: $font-family-montserrat-medium;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 3px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+    }
+  }
+}
