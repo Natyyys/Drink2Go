@@ -4,6 +4,14 @@
   margin: 0 auto;
 }
 
+.filter-form__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .filter-form__group {
   margin: 0;
   padding: 0;
@@ -20,4 +28,20 @@
   width: 100%;
   text-align: left;
   margin-bottom: 24px;
+}
+
+.filter-form__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.filter-form__button {
+  width: 100%;
+  font-family: $font-family-montserrat-regular;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 91px;
+  margin-bottom: 20px;
 }

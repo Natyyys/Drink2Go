@@ -1,0 +1,152 @@
+.control {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 34px;
+  position: relative;
+
+  &--ellipse {
+    padding-left: 52px;
+  }
+}
+
+//radio
+
+.control__mark--radio {
+  box-sizing: border-box;
+  position: absolute;
+  top: 42%;
+  left: 0;
+  transform: translateY(-50%);
+
+  width: 24px;
+  height: 24px;
+  border: 2px solid #bdbdbd;
+  border-radius: 50%;
+}
+
+.control__text {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.control__input {
+  &:hover + .control__mark--radio,
+  &:focus + .control__mark--radio {
+    border-color: #9070ec;
+  }
+
+  &:hover + .control__mark--radio::after,
+  &:focus + .control__mark--radio::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    background-color: #7859cf40;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &:active + .control__mark--radio {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:checked + .control__mark--radio {
+    border-color: #7859cf;
+  }
+
+  &:checked + .control__mark--radio::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    background-color: #7859cf;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &:disabled + .control__mark--radio {
+    border-color: #e2e2e2;
+  }
+
+  &:disabled ~ .control__text {
+    color: #e2e2e2;
+  }
+
+  &:checked:disabled + .control__mark--radio::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    background-color: #e2e2e2;
+    border-radius: 50%;
+    content: "";
+  }
+}
+
+//checkbox
+
+.control__mark--checkbox {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  width: 42px;
+  height: 24px;
+  background-color: #bdbdbd;
+  border: 2px solid #bdbdbd;
+  border-radius: 12px;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    content: "";
+  }
+}
+
+.control__input {
+  &:hover + .control__mark--checkbox {
+    border-color: #9070ec;
+    background-color: #7859cf40;
+  }
+
+  &:checked + .control__mark--checkbox {
+    border-color: #7859cf;
+    background-color: #7859cf;
+    transition: all 1s ease-out;
+  }
+
+  &:checked + .control__mark--checkbox::after {
+    right: 0;
+    left: unset;
+  }
+
+  &:checked:disabled + .control__mark--checkbox::after {
+    background-color: #bdbdbd;
+  }
+
+  &:disabled + .control__mark--checkbox {
+    border-color: #e2e2e2;
+    background-color: #e2e2e2;
+  }
+}
