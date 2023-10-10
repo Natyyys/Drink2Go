@@ -1,0 +1,93 @@
+.features {
+  padding: 50px 20px 60px;
+  text-align: center;
+}
+
+.features__title {
+  font-family: $font-family-montserrat-bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-base_primary;
+  margin: 0;
+  padding: 0 10px;
+  margin-bottom: 4px;
+}
+
+.features__subtitle {
+  font-family: $font-family-montserrat-bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: $color-black-base;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 36px;
+  width: 300px;
+}
+
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.features__item {
+  position: relative;
+  height: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 4px;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 56px;
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--speed::after {
+    background-image: url("/images/speed.svg");
+  }
+
+  &--comfort::after {
+    background-image: url("/images/comfort.svg");
+  }
+
+  &--energy::after {
+    background-image: url("/images/energy.svg");
+  }
+
+  &--eco::after {
+    background-image: url("/images/ecology.svg");
+  }
+}
+
+.features__item-heading {
+  font-family: $font-family-montserrat-bold;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.features__item-description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
+}
