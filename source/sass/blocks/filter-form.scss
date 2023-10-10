@@ -1,0 +1,23 @@
+.filter-form {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.filter-form__group {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+}
+
+.filter-form__title {
+  font-family: $font-family-montserrat-semi-bold;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 24px;
+}
