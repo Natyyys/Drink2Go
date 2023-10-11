@@ -24,6 +24,10 @@
       padding: 0;
       border: none;
       background: transparent url("/images/button-toggle-closed.svg") center / 16px 12px no-repeat;
+
+      &:active {
+        background-color: $color-base-secondary;
+      }
     }
 
     .main-nav--js.main-nav--opened & {
@@ -46,7 +50,7 @@
 
   @media (max-width: $mobile-width-only) {
     position: relative;
-    background-color: #ffffff;
+    background-color: $color-white-base;
 
      .main-nav--js & {
       position: absolute;
@@ -71,21 +75,21 @@
 .main-nav__item {
   @media (max-width: $mobile-width-only) {
     &:not(:last-child) {
-      border-top: 1px solid rgba(240, 235, 255, 1);
+      border-top: 1px solid $color-base-secondary;
     }
 
     & + .main-nav__item {
-      border-bottom: 1px solid rgba(240, 235, 255, 1);
+      border-bottom: 1px solid $color-base-secondary;
     }
   }
 
-  @media (min-width: $tablet-width) {
+  /*@media (min-width: $tablet-width) {
     flex: 0 0 20%;
 
     &:nth-child(4n+3) {
       margin-left: 20%;
     }
-  }
+  }*/
 }
 
 .main-nav__link {
@@ -93,7 +97,7 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
-  color: #333333;
+  color: $color-black-base;
   padding: 20px 128px;
   text-transform: uppercase;
 }
