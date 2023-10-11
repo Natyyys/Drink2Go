@@ -428,20 +428,30 @@
 
         <div>
           <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link visually-hidden">Назад</a>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--arrow">
+                <svg class="pagination__link-icon" aria-hidden="true" focusable="false" width="10" height="6">
+                  <use href="images/icons/stack.svg#arrow-forward"></use>
+                </svg>
+                <span class="pagination__link-text">Назад</span>
+              </a>
             </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">1</a>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">1</a>
             </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current" href="#">2</a>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--current" href="#">2</a>
             </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
             </li>
-            <li class="pagination-item">
-              <a class="pagination-link visually-hidden">Вперед</a>
+            <li class="pagination__item">
+              <a class="pagination__link">
+                <svg class="pagination__link-icon" aria-hidden="true" focusable="false" width="10" height="6">
+                  <use href="images/icons/stack.svg#arrow-back"></use>
+                </svg>
+                <span class="pagination__link-text">Вперед</span>
+              </a>
             </li>
           </ul>
         </div>

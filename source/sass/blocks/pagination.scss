@@ -1,0 +1,58 @@
+.pagination {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  min-width: 280px;
+}
+
+.pagination__link {
+  font-family: $font-family-montserrat-regular;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-base-primary;
+  background-color: $color-white-base;
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 4px;
+
+  &--current {
+      font-family: $font-family-montserrat-semi-bold;
+      color: $color-black-base;
+      background-color: transparent;
+  }
+
+  &:hover,
+  &:focus {
+      background-color: $color-primary-lighter;
+      color: $color-white-base;
+      fill: $color-white-base;
+  }
+
+  &:active {
+      background-color: $color-primary-darker;
+      color: $color-white-base;
+  }
+
+  &:disabled {
+      background-color: $color-light-grey;
+  }
+}
+
+.pagination__link-text {
+  @media (min-width: $mobile-width) {
+      display: none;
+  }
+}
+
+.pagination__link-icon {
+  width: 10px;
+  height: 10px;
+  fill: currentColor;
+}
