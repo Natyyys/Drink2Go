@@ -34,6 +34,11 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 32px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
+    margin: 0 auto;
+  }
 }
 
 .features__item {

@@ -1,3 +1,10 @@
+.cards {
+   @media (max-width: $mobile-width-only) {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
 .cards-item {
   padding: 40px 20px 20px;
   background-color: $color-white-base;
