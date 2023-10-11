@@ -1,0 +1,30 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  min-width: 160px;
+}
+
+.social__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 4px;
+  fill: $color-base-grey;
+
+  &:hover,
+  &:focus {
+      background-color: $color-base-secondary;
+      fill: $color-base-primary;
+  }
+
+  &:active {
+      background-color: $color-primary-opacity;
+      fill: $color-base-primary;
+  }
+}

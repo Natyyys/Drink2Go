@@ -1,0 +1,45 @@
+.contacts {
+  font-family: $font-family-montserrat-regular;
+  color: $color-black-base;
+}
+.contacts__item {
+  max-width: 280px;
+}
+
+.contacts__address::before,
+.contacts__phone::before {
+position: absolute;
+top: 1px;
+left: 0;
+
+width: 13px;
+height: 16px;
+background-position: center;
+background-repeat: no-repeat;
+content: "";
+}
+
+.contacts__address {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-left: 19px;
+
+  font-style: normal;
+
+  &::before {
+    background-image: url("/images/mark.svg");
+  }
+}
+
+.contacts__phone {
+  position: relative;
+  padding-left: 19px;
+
+  color: #333333;
+  text-decoration: none;
+
+  &::before {
+    background-image: url("/images/phone.svg");
+  }
+}

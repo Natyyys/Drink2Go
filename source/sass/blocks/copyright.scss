@@ -1,0 +1,32 @@
+.copyright {
+  display: inline-block;
+  text-align: center;
+}
+
+.copyright__link,
+.copyright__text {
+  font-family: $font-family-montserrat-regular;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-base-grey;
+}
+
+.copyright__link {
+  position: relative;
+  color: $color-base-grey;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-base-primary;
+  }
+
+  &:active {
+    color: $color-primary-darker;
+  }
+}
+
+.copyright__link-logo {
+  vertical-align: middle;
+  fill: currentColor;
+}

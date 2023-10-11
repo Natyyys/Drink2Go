@@ -463,37 +463,42 @@
     </main>
 
     <footer class="main-footer">
-      <a class="main-footer__logo-link" href="index.html">
-        <img class="main-footer__logo-image" src="images/logo/logo-medium.svg" width="82" height="36" alt="Логотип интернет-магазина Drink2Go">
-      </a>
+      <h2 class="visually-hidden">Полезная информация</h2>
+      <div class="main-footer__info">
+        <div class="main-footer__wrapper">
+          <a class="main-footer__logo-link" href="index.html">
+            <img class="main-footer__logo-image" src="images/logo/logo-medium.svg" width="82" height="36" alt="Логотип интернет-магазина Drink2Go">
+          </a>
 
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__item-icon" aria-hidden="true" focusable="false" width="20" height="20">
-                <use href="img/sprite.svg#vk"></use>
-              </svg>
-              <span class="visually-hidden">ВКонтакте.</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__item-icon" aria-hidden="true" focusable="false" width="22" height="22">
-                <use href="img/sprite.svg#pinterest"></use>
-              </svg>
-              <span class="visually-hidden">Pinterest.</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__item-icon" aria-hidden="true" focusable="false" width="20" height="20">
-                <use href="img/sprite.svg#ok"></use>
-              </svg>
-              <span class="visually-hidden">Одноклассники.</span>
-            </a>
-          </li>
-        </ul>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__link-icon" aria-hidden="true" focusable="false" width="20" height="20">
+                    <use href="images/icons/stack.svg#vk""></use>
+                  </svg>
+                  <span class="visually-hidden">ВКонтакте.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__link-icon" aria-hidden="true" focusable="false" width="22" height="22">
+                    <use href="images/icons/stack.svg#pinterest"></use>
+                  </svg>
+                  <span class="visually-hidden">Pinterest.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__link-icon" aria-hidden="true" focusable="false" width="20" height="20">
+                    <use href="images/icons/stack.svg#ok"></use>
+                  </svg>
+                  <span class="visually-hidden">Одноклассники.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div class="main-footer__info">
@@ -531,21 +536,27 @@
 
       <div class="main-footer__info">
         <h2 class="main-footer__info-title">Контакты</h2>
-        <h3 class="visually-hidden">Наш адрес.</h3>
-        <address>Санкт-Петербург, набережная реки Карповки, дом 5</address>
-        <h3 class="visually-hidden">Телефон для связи.</h3>
-        <a href="tel:+79999999999">+7 (999) 999-99-99></a>
+        <ul class="main-footer__info-list contacts">
+          <li class="contacts__item">
+            <h3 class="visually-hidden">Наш адрес.</h3>
+            <p class="contacts__address">Санкт-Петербург, набережная реки Карповки, дом 5</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="visually-hidden">Телефон для связи.</h3>
+            <a class="contacts__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
+          </li>
+        </ul>
       </div>
 
-      <div class="main-footer__copyright">
-        <b class="main-footer__copyright-text">Разработано в</b>
-        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">HTML Academy
-          <svg aria-hidden="true" focusable="false" width="12" height="16">
-            <use href="img/sprite.svg#html-academy"></use>
+      <div class="main-footer__info copyright">
+        <span class="copyright__text">Разработано в</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
+          HTML Academy
+          <svg class="copyright__link-logo" aria-hidden="true" focusable="false" width="12" height="16">
+            <use href="images/icons/stack.svg#html-academy"></use>
           </svg>
         </a>
       </div>
-
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
