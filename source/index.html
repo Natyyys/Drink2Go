@@ -502,10 +502,14 @@
 
     <footer class="main-footer">
       <h2 class="visually-hidden">Полезная информация</h2>
-      <div class="main-footer__info">
+      <div class="main-footer__info main-footer__info--large">
         <div class="main-footer__wrapper">
           <a class="main-footer__logo-link" href="index.html">
-            <img class="main-footer__logo-image" src="images/logo/logo-medium.svg" width="82" height="36" alt="Логотип интернет-магазина Drink2Go">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/logo/logo-big.svg" width="170" height="36" type="image/svg+xml">
+              <img class="main-footer__logo-image" src="images/logo/logo-medium.svg" width="82" height="36" alt="Логотип интернет-магазина Drink2Go">
+            </picture>
+            <span class="main-footer__logo-text">Интернет-магазин кофейных напитков</span>
           </a>
 
           <div class="social">
@@ -586,7 +590,7 @@
         </ul>
       </div>
 
-      <div class="main-footer__info copyright">
+      <div class="main-footer__info copyright main-footer__info--large">
         <span class="copyright__text">Разработано в</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
           HTML Academy

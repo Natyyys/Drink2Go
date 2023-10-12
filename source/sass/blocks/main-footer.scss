@@ -2,6 +2,20 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 222px);
+    column-gap: 31px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 317px);
+    column-gap: 31px;
+    justify-content: space-between;
+  }
 }
 
 .main-footer__header {
@@ -13,8 +27,20 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 20px;
   border-bottom: 1px solid $color-base-secondary;
+  padding: 20px;
+
+  @media (min-width: $tablet-width){
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $only-tablet-width) {
+    border: none;
+
+    &--large {
+      grid-column: 1 / -1;
+    }
+  }
 }
 
 .main-footer__wrapper {
@@ -47,4 +73,31 @@
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $color-primary-lighter;
+  }
+
+  &:active {
+    color: $color-primary-darker;
+  }
+}
+
+.main-footer__logo-text {
+  @media (min-width: $mobile-width) and (max-width: $only-tablet-width) {
+    display: none;
+  }
+}
+
+.main-footer__logo-image {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.main-footer__logo-link {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
 }

@@ -1,6 +1,15 @@
 .copyright {
   display: inline-block;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    padding-bottom: 40px;
+  }
 }
 
 .copyright__link,
