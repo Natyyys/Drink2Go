@@ -7,8 +7,9 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    column-gap: 33px;
-    margin-left: -10px;
+    width: 223px;
+    margin: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,10 +73,6 @@
   &--to {
     color: $color-black-base;
     font-family: $font-family-montserrat-medium;
-
-    @media (min-width: $tablet-width) {
-      margin-right: 3px;
-    }
 
     @media (min-width: $desktop-width) {
       margin-right: 0;

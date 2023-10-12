@@ -2,6 +2,16 @@
   position: relative;
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 222px);
+    column-gap: 31px;
+    row-gap: 40px;
+    justify-content: space-evenly;
+
+    width: unset;
+  }
 }
 
 .filter-form__list {
@@ -44,4 +54,17 @@
   line-height: 24px;
   padding: 8px 91px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 20px;
+  }
+}
+
+.filter-form__button-wrapper {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+  }
 }

@@ -6,6 +6,18 @@
   justify-content: center;
   gap: 12px;
   margin: 0 0 15px 7px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    width: 728px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: end;
+    width: 1360px;
+    margin: 0 auto;
+  }
 }
 
 .select__title {

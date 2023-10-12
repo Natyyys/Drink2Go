@@ -7,6 +7,18 @@
   gap: 20px;
   padding: 0;
   min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    width: 728px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: end;
+    width: 1360px;
+    margin: 0 auto;
+  }
 }
 
 .pagination__link {
@@ -23,21 +35,21 @@
   border-radius: 4px;
 
   &--current {
-      font-family: $font-family-montserrat-semi-bold;
-      color: $color-black-base;
-      background-color: transparent;
+    font-family: $font-family-montserrat-semi-bold;
+    color: $color-black-base;
+    background-color: transparent;
   }
 
   &:hover,
   &:focus {
-      background-color: $color-primary-lighter;
-      color: $color-white-base;
-      fill: $color-white-base;
+    background-color: $color-primary-lighter;
+    color: $color-white-base;
+    fill: $color-white-base;
   }
 
   &:active {
-      background-color: $color-primary-darker;
-      color: $color-white-base;
+    background-color: $color-primary-darker;
+    color: $color-white-base;
   }
 
   &:disabled {
@@ -46,8 +58,15 @@
 }
 
 .pagination__link-text {
-  @media (min-width: $mobile-width) {
-      display: none;
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.pagination__link--arrow {
+  @media (min-width: $tablet-width) {
+    width: min-content;
+    padding: 8px 20px;
   }
 }
 
@@ -55,5 +74,9 @@
   width: 10px;
   height: 10px;
   fill: currentColor;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 

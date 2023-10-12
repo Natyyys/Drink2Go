@@ -9,14 +9,23 @@
 .range__scale {
   height: 4px;
   background-color: $color-light-grey;
+
+  @media (min-width: $tablet-width) {
+    max-width: 223px;
+  }
 }
 
 .range__bar {
   position: absolute;
   margin-left: 10px;
-  width: 85.5%;
+  width: 241px;
   height: 4px;
   background-color: $color-primary-lighter;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 8px;
+    width: 192px;
+  }
 }
 
 .range__toggle {
@@ -38,6 +47,11 @@
 
   &--max {
     left: 90%;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+      left: 179px;
+    }
   }
 
   &:hover,
