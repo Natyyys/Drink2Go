@@ -7,24 +7,32 @@
 }
 
 .range__scale {
-  height: 4px;
+  height: 2px;
   background-color: $color-light-grey;
 
   @media (min-width: $tablet-width) {
-    max-width: 223px;
+    width: 223px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
   }
 }
 
 .range__bar {
   position: absolute;
-  margin-left: 10px;
   width: 241px;
   height: 4px;
+  margin-left: 0;
+  top: 10px;
   background-color: $color-primary-lighter;
 
   @media (min-width: $tablet-width) {
-    margin-left: 8px;
     width: 192px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 274px;
   }
 }
 
@@ -51,6 +59,10 @@
     @media (min-width: $tablet-width) {
       margin-right: 20px;
       left: 179px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 274px;
     }
   }
 

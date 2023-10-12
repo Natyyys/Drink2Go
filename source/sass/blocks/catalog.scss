@@ -9,6 +9,18 @@
   }
 }
 
+.catalog__wrapper {
+  @media (min-width:$tablet-width) {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+}
+
 .catalog__title {
   font-family: $font-family-montserrat-bold;
   font-size: 12px;
@@ -38,6 +50,14 @@
   }
 }
 
+.catalog__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 318px 1011px;
+    gap: 30px;
+  }
+}
+
 .catalog__filter{
   margin: 0;
   display: flex;
@@ -49,4 +69,14 @@
   flex-direction: column;
   justify-content: start;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 /2;
+  }
+}
+
+.catalog__cards {
+  @media (min-width: $desktop-width) {
+    grid-column: 2 /-1;
+  }
 }

@@ -15,8 +15,9 @@
 
   @media (min-width: $desktop-width) {
     justify-content: end;
-    width: 1360px;
+    width: 100%;
     margin: 0 auto;
+    margin-bottom: 26px;
   }
 }
 
