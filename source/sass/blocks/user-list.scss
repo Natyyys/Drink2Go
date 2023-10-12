@@ -19,6 +19,10 @@
   @media (max-width: $desktop-width) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 8px;
+  }
 }
 
 .user-list__link {
@@ -32,4 +36,20 @@
   @media (min-width: $tablet-width) {
     padding: 32px 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      color: $color-base-primary;
+    }
+
+    &:active {
+      background-color: $color-base-secondary;
+    }
+  }
+}
+
+.user-list__icon {
+  vertical-align: middle;
+  fill: currentColor;
 }
