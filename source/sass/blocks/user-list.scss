@@ -3,25 +3,33 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: end;
-  margin: 0;
-  padding: 0;
-  margin-top: -56px;
   padding-right: 60px;
-  margin-left: auto;
+  margin: 0 60px 0 0;
+  padding: 0;
   list-style: none;
-  text-align: center;
-  width: 100%;
-}
 
-.user-list__item {
-  padding: 18px 22px;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    justify-content: start;
+  }
 }
 
 .user-list__text {
-  display: none;
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
-.uuser-list__link {
-  width: 60px;
-  height: 60px;
+.user-list__link {
+  display: block;
+  padding: 19px 22px;
+
+  &:active {
+    background-color: $color-base-secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 22px;
+  }
 }

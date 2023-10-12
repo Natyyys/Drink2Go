@@ -9,14 +9,52 @@
   @media (min-width: $tablet-width) {
     position: relative;
     display: flex;
+    padding: 0 40px;
   }
 }
 
 .main-header__logo-text {
-  display: none;
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+
+  @media (min-width:$desktop-width) {
+    font-size: 12px;
+    line-height: 16px;
+    width: 136px;
+    padding: 0 5px;
+  }
 }
 
 .main-header__container-logo {
-  width: max-content;
+  max-width: min-content;
   padding: 12px 20px;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+    margin-right: 0;
+  }
+
+  @media (min-width:$desktop-width) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+  }
+}
+
+.main-header__logo-image {
+  max-width: max-content;
+  margin: 0;
+}
+
+.main-header__container {
+  display: flex;
+  flex-direction: row;
+
+  @media (min-width: $tablet-width) {
+    flex: 0 0 100%;
+    justify-content: space-between;
+  }
 }
