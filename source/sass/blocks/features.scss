@@ -1,6 +1,10 @@
 .features {
   padding: 50px 20px 60px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 40px 120px;
+  }
 }
 
 .features__title {
@@ -23,6 +27,20 @@
   padding: 0 10px;
   margin-bottom: 36px;
   width: 300px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+    width: 730px;
+    padding: 0 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 0 50px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
 }
 
 .features__list {
@@ -39,11 +57,22 @@
     width: 280px;
     margin: 0 auto;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    gap: 30px;
+    justify-content: space-between;
+  }
 }
 
 .features__item {
   position: relative;
-  height: 142px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -60,6 +89,15 @@
     transform: translateX(-50%);
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: $tablet-width) and (max-width: $only-tablet-width) {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
   }
 
   &--speed::after {
@@ -77,6 +115,18 @@
   &--eco::after {
     background-image: url("/images/ecology.svg");
   }
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+    height: auto;
+    gap: 10px;
+    padding-top: 72px;
+  }
 }
 
 .features__item-heading {
@@ -84,15 +134,33 @@
   font-size: 18px;
   line-height: 32px;
   margin: 0;
-  padding: 0 10px;
+  margin-top: 62px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    padding: 0 10px 0 72px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0 10px;
+    text-align: center;
+  }
 }
 
 .features__item-description {
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    br {
-      display: none;
-    }
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 10px 0 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 10px;
+    text-align: center;
   }
 }
