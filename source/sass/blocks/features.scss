@@ -2,8 +2,8 @@
   padding: 50px 20px 60px;
   text-align: center;
 
-  @media (min-width: $desktop-width) {
-    padding: 100px 40px 120px;
+  @media (min-width: $tablet-width) {
+    padding: 60px 20px 96px;
   }
 }
 
@@ -31,7 +31,7 @@
     font-size: 42px;
     line-height: 64px;
     width: 730px;
-    padding: 0 1px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,6 +61,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    row-gap: 50px;
     width: 728px;
     margin: 0 auto;
   }
@@ -92,7 +93,7 @@
     background-size: contain;
 
     @media (min-width: $tablet-width) and (max-width: $only-tablet-width) {
-      top: 50%;
+      top: 32px;
       transform: translateY(-50%);
       left: 0;
     }
@@ -142,6 +143,7 @@
     line-height: 36px;
     padding: 0 10px 0 72px;
     margin: 0;
+    margin-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {

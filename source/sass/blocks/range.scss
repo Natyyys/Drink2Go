@@ -4,6 +4,10 @@
   border-radius: 5px;
   margin-bottom: 23px;
   user-select: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .range__scale {
@@ -85,7 +89,6 @@
   &:active {
     &::after {
       background-color: $color-base-primary;
-      transition: all 0.4s ease-out;
     }
   }
 }

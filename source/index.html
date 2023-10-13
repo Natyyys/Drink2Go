@@ -19,55 +19,58 @@
   <body class="page-wrapper">
     <header class="main-header">
       <div class="main-header__container">
-        <div class="main-header__container-logo">
+        <div class="main-header__logo-container">
           <a class="main-header__logo" href="index.html">
             <picture>
-              <source media="(min-width: 1440px)" srcset="images/logo/logo-big.svg" width="170" height="36" type="image/svg+xml">
-              <source media="(min-width: 768px)" srcset="images/logo/logo-medium.svg" width="82" height="36" type="image/svg+xml">
-              <img class="main-header__logo-image" src="images/logo/logo-small.svg" width="32" height="36" alt="Логотип интернет-магазина Drink2Go">
+              <source srcset="images/logo/logo-big.svg" width="170" height="36" type="image/svg+xml" media="(min-width: 1440px)">
+              <source srcset="images/logo/logo-medium.svg" width="82" height="36" type="image/svg+xml" media="(min-width: 768px)">
+              <img class="main-header__logo-image" src="images/logo/logo-small.svg" width="32" height="36" alt="Логотип интернет-магазина кофейных напитков Drink2Go.">
             </picture>
           </a>
           <span class="main-header__logo-text">Интернет-магазин кофейных напитков</span>
         </div>
 
-        <nav class="main-nav">
-          <button class="main-nav__toggle js-toggle-button" type="button">
-            <span class="visually-hidden">Открыть меню.</span>
+        <nav class="main-nav main-nav--nojs">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+            <span class="main-nav__toggle-icon"></span>
           </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Каталог</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Доставка</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">О нас</a>
-            </li>
-          </ul>
-        </nav>
 
-          <ul class="user-list">
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">
-                <svg class="user-list__icon" width="16" height="16" aria-hidden="true" focusable="false" aria-label="Войти в личный кабинет">
-                  <use href="images/icons/stack.svg#user"></use>
-                </svg>
-                <span class="user-list__text">Войти</span>
-              </a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">
-                <svg class="user-list__icon" width="16" height="16" aria-hidden="true" focusable="false" aria-label="Просмотреть корзину">
-                  <use href="images/icons/stack.svg#basket-header"></use>
-                </svg>
-                <span class="user-list__text">Корзина</span>
-              </a>
-            </li>
-          </ul>
+          <div class="main-nav__container">
+            <ul class="main-nav__list main-nav__list--site site-list">
+              <li class="site-list__item ">
+                <a class="site-list__link site-list__link--current" href="#">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Каталог</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Доставка</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">О нас</a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item">
+                <a class="user-list__link user-list__account" href="#">
+                  <svg class="user-list__icon" aria-hidden="true" focusable="false" width="16" height="16">
+                    <use href="images/icons/stack.svg#user"></use>
+                  </svg>
+                  <span class="user-list__text">Войти</span>
+                </a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link user-list__cart" href="#">
+                  <svg class="user-list__icon" aria-hidden="true" focusable="false" width="16" height="16">
+                    <use href="images/icons/stack.svg#basket-header"></use>
+                  </svg>
+                  <span class="user-list__text">Корзина</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -103,47 +106,54 @@
           </li>
 
           <li class="slider__item swiper-slide slider__item--lavender">
-            <div class="slider__image-container">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="images/slider/lavender-desktop.webp 1x, images/slider/lavender-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/lavender-tablet.webp 1x, images/slider/lavender-tablet@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 320px)" srcset="images/slider/lavender-mobile.webp 1x, images/slider/lavender-mobile@2x.webp 2x">
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/slider/lavender-desktop.png 1x, images/slider/lavender-desktop@2x.png 2x">
-                <source type="image/png" media="(min-width: 768px)" srcset="images/slider/lavender-tablet.png 1x, images/slider/lavender-tablet@2x.png 2x">
-                <img class="slider__image" src="images/slider/lavender-mobile.png" width="280" height="280" srcset="images/slider/lavender-mobile@2x.png 2x" alt="Лавандовый Латте.">
-              </picture>
-            </div>
-            <span class="slider__badge">Новинка!</span>
-            <h3 class="slider__title">Лавандовый Латте</h3>
-            <p class="slider__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-            <div class="slider__price-container">
-              <del class="slider__price">285₽</del>
-              <span class="slider__price-discount">265₽</span>
-              <button class="slider__price-button button button--primary" type="button">Заказать</button>
+            <div class="slider__item-wrapper">
+              <div class="slider__image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/slider/lavender-desktop.webp 1x, images/slider/lavender-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/lavender-tablet.webp 1x, images/slider/lavender-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="images/slider/lavender-mobile.webp 1x, images/slider/lavender-mobile@2x.webp 2x">
+                  <source type="image/png" media="(min-width: 1440px)" srcset="images/slider/lavender-desktop.png 1x, images/slider/lavender-desktop@2x.png 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/slider/lavender-tablet.png 1x, images/slider/lavender-tablet@2x.png 2x">
+                  <img class="slider__image" src="images/slider/lavender-mobile.png" width="280" height="280" srcset="images/slider/lavender-mobile@2x.png 2x" alt="Лавандовый Латте.">
+                </picture>
+              </div>
+              <div class="slider__inner-wrapper">
+                <span class="slider__badge">Новинка!</span>
+                <h3 class="slider__title">Лавандовый Латте</h3>
+                <p class="slider__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                <div class="slider__price-container">
+                  <del class="slider__price">285₽</del>
+                  <span class="slider__price-discount">265₽</span>
+                  <button class="slider__price-button button button--primary" type="button">Заказать</button>
+                </div>
+              </div>
             </div>
           </li>
 
           <li class="slider__item swiper-slide slider__item--espresso">
-            <div class="slider__image-container">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="images/slider/espresso-desktop.webp 1x, images/slider/espresso-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/espresso-tablet.webp 1x, images/slider/espresso-tablet@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 320px)" srcset="images/slider/espresso-mobile.webp 1x, images/slider/espresso-mobile@2x.webp 2x">
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/slider/espresso-desktop.png 1x, images/slider/espresso-desktop@2x.png 2x">
-                <source type="image/png" media="(min-width: 768px)" srcset="images/slider/espresso-tablet.png 1x, images/slider/espresso-tablet@2x.png 2x">
-                <img class="slider__image" src="images/slider/espresso-mobile.png" width="280" height="280" srcset="images/slider/espresso-mobile@2x.png 2x" alt="Тройной Эспрессо.">
-              </picture>
-            </div>
-            <span class="slider__badge">Новинка!</span>
-            <h3 class="slider__title">Тройной Эспрессо</h3>
-            <p class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-            <div class="slider__price-container">
-              <del class="slider__price">395₽</del>
-              <span class="slider__price-discount">375₽</span>
-              <button class="slider__price-button button button--primary" type="button">Заказать</button>
+            <div class="slider__item-wrapper">
+              <div class="slider__image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/slider/espresso-desktop.webp 1x, images/slider/espresso-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/espresso-tablet.webp 1x, images/slider/espresso-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="images/slider/espresso-mobile.webp 1x, images/slider/espresso-mobile@2x.webp 2x">
+                  <source type="image/png" media="(min-width: 1440px)" srcset="images/slider/espresso-desktop.png 1x, images/slider/espresso-desktop@2x.png 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/slider/espresso-tablet.png 1x, images/slider/espresso-tablet@2x.png 2x">
+                  <img class="slider__image" src="images/slider/espresso-mobile.png" width="280" height="280" srcset="images/slider/espresso-mobile@2x.png 2x" alt="Тройной Эспрессо.">
+                </picture>
+              </div>
+              <div class="slider__inner-wrapper">
+                <span class="slider__badge">Новинка!</span>
+                <h3 class="slider__title">Тройной Эспрессо</h3>
+                <p class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                <div class="slider__price-container">
+                  <del class="slider__price">395₽</del>
+                  <span class="slider__price-discount">375₽</span>
+                  <button class="slider__price-button button button--primary" type="button">Заказать</button>
+                </div>
+              </div>
             </div>
           </li>
-        </ol>
 
           <button class="slider__button slider__button--prev swiper-button-prev" type="button">
             <span class="visually-hidden">Предыдущий слайд.</span>
@@ -323,7 +333,7 @@
                     </picture>
                     <div class="cards-info">
                       <p class="cards-title">Декаф Флэт Уайт</p>
-                      <p class="cards-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                      <p class="cards-description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                     </div>
                   </a>
                   <div class="cards-buy">
@@ -344,7 +354,7 @@
                     </picture>
                     <div class="cards-info">
                       <p class="cards-title">Декаф Флэт Уайт</p>
-                      <p class="cards-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                      <p class="cards-description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                     </div>
                   </a>
                   <div class="cards-buy">
@@ -365,7 +375,7 @@
                     </picture>
                     <div class="cards-info">
                       <p class="cards-title">Декаф Флэт Уайт</p>
-                      <p class="cards-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                      <p class="cards-description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                     </div>
                   </a>
                   <div class="cards-buy">
@@ -386,7 +396,7 @@
                     </picture>
                     <div class="cards-info">
                       <p class="cards-title">Декаф Флэт Уайт</p>
-                      <p class="cards-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                      <p class="cards-description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                     </div>
                   </a>
                   <div class="cards-buy">
@@ -407,7 +417,7 @@
                     </picture>
                     <div class="cards-info">
                       <p class="cards-title">Декаф Флэт Уайт</p>
-                      <p class="cards-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                      <p class="cards-description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                     </div>
                   </a>
                   <div class="cards-buy">
@@ -428,7 +438,7 @@
                     </picture>
                     <div class="cards-info">
                       <p class="cards-title">Декаф Флэт Уайт</p>
-                      <p class="cards-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                      <p class="cards-description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                     </div>
                   </a>
                   <div class="cards-buy">

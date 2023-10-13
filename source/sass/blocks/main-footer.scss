@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: repeat(3, 222px);
     column-gap: 31px;
-    justify-content: space-between;
+    padding: 0 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,13 +32,16 @@
 
   @media (min-width: $tablet-width){
     border: none;
+    padding: 0;
   }
 
   @media (min-width: $tablet-width) and (max-width: $only-tablet-width) {
-    border: none;
-
     &--large {
       grid-column: 1 / -1;
+
+      @media (min-width: $tablet-width){
+        padding: 42px 0 30px;
+      }
     }
   }
 }
@@ -47,6 +50,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 728px;
+  }
 }
 
 .main-footer__info-title {
@@ -74,7 +81,6 @@
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
-  //padding: 8px 0;
 
   &:hover,
   &:focus {

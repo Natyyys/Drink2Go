@@ -9,8 +9,7 @@
     column-gap: 31px;
     row-gap: 40px;
     justify-content: space-evenly;
-
-    width: unset;
+    width: 728px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,6 +34,10 @@
   margin-bottom: 30px;
   padding: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;

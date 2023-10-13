@@ -3,6 +3,11 @@
   text-align: center;
   background-color: $color-lightest-grey;
 
+  @media (min-width:$tablet-width) {
+    padding: 80px 20px 90px;
+
+  }
+
   @media (min-width:$desktop-width) {
     padding: 100px 40px 120px;
 
@@ -28,7 +33,7 @@
   text-transform: uppercase;
   color: $color-base_primary;
   margin: 0;
-  padding: 0 10px;
+  padding: 0;
   margin-bottom: 4px;
 }
 
@@ -45,11 +50,16 @@
     font-size: 42px;
     line-height: 64px;
     width: 730px;
-    padding: 0 1px;
+    padding: 0;
   }
 }
 
 .catalog__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 728px;
+  }
+
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 318px 1011px;

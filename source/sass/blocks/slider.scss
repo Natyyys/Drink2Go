@@ -24,7 +24,7 @@
   min-height: 635px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 20px 0;
+    padding: 58px 20px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,25 +35,25 @@
   &--decaf {
     background-color: $color-flat_white;
 
-    /*@media (min-width: $tablet-width) and (max-width: $only-tablet-width) {
-      background-image: linear-gradient(180deg, $color-flat_white 0, $color-flat_white 72%, $color-white-base 72%);
-    }*/
+    @media (min-width: $tablet-width) and (max-width: $only-tablet-width) {
+      background-image: linear-gradient(180deg, $color-flat_white 0, $color-flat_white 640px, $color-white-base 640px);
+    }
   }
 
   &--lavender {
     background-color: $color-lavender_latte;
 
-    /*@media (min-width: $tablet-width) and (max-width: $only-tablet-width) {
-      background-image: linear-gradient(180deg, $color-lavender_latte 0, $color-lavender_latte 72%, $color-white-base 72%);
-    }*/
+    @media (min-width: $tablet-width) and (max-width: $only-tablet-width) {
+      background-image: linear-gradient(180deg, $color-lavender_latte 0, $color-lavender_latte 640px, $color-white-base 640px);
+    }
   }
 
   &--espresso {
     background-color: $color-espresso;
 
-    /*@media (min-width: $tablet-width) and (max-width: $only-tablet-width) {
-      background-image: linear-gradient(180deg, $color-espresso 0, $color-espresso 72%, $color-white-base 72%);
-    }*/
+    @media (min-width: $tablet-width) and (max-width: $only-tablet-width) {
+      background-image: linear-gradient(180deg, $color-espresso 0, $color-espresso 640px, $color-white-base 640px);
+    }
   }
 }
 
@@ -81,6 +81,7 @@
     font-size: 20px;
     line-height: 32px;
     max-width: $tablet-width;
+    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,6 +103,7 @@
     font-size: 56px;
     line-height: 80px;
     margin-bottom: 16px;
+    margin-top: 2px;
   }
 }
 
@@ -245,12 +247,15 @@
     left: -3px;
     top: 15px;
     transform: rotate(226deg);
-  }
 
-  @media (min-width: $tablet-width) {
-    &::after {
-      left: 38px;
+    @media (min-width: $tablet-width) {
+      top: -78px;
     }
+
+    @media (min-width: $tablet-width) {
+        left: 26px;
+    }
+
   }
 }
 
@@ -261,11 +266,10 @@
     right: -3px;
     top: 15px;
     transform: rotate(46deg);
-  }
 
-  @media (min-width: $tablet-width) {
-    &::after {
-      right: 38px;
+    @media (min-width: $tablet-width) {
+      top: -78px;
+      right: 26px;
     }
   }
 }
