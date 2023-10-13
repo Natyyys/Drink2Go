@@ -8,6 +8,7 @@
     grid-template-columns: repeat(3, 222px);
     column-gap: 31px;
     padding: 0 20px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,7 +53,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    width: 728px;
+    min-width: 728px;
   }
 }
 
