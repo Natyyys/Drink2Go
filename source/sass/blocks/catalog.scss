@@ -38,9 +38,8 @@
   line-height: 36px;
   color: $color-black-base;
   margin: 0 auto;
-  padding: 0 10px;
-  margin-bottom: 36px;
-  width: 300px;
+  padding: 0;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 42px;
@@ -76,6 +75,8 @@
 }
 
 .catalog__cards {
+  padding-top: 20px;
+
   @media (min-width: $desktop-width) {
     grid-column: 2 /-1;
   }

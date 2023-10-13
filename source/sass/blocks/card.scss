@@ -54,7 +54,7 @@
 }
 
 .card__link-image {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 
 }
 
@@ -71,7 +71,7 @@
   font-size: 18px;
   line-height: 32px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -80,14 +80,15 @@
 }
 
 .cards-description {
-  margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 15px;
   padding-right: 10px;
-  margin-top: 0;
 }
 
 .cards-buy {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .cards-price{
@@ -97,12 +98,13 @@
 }
 
 .cards-button {
-  padding: 8px 20px;
+  padding:8px 20px;
+  border: none;
   font-family: $font-family-montserrat-regular;
   font-size: 14px;
   line-height: 20px;
 }
 
 .cards-button-text {
-  margin-left: 3px;
+  margin-left: 2px;
 }

@@ -1,6 +1,7 @@
 .contacts {
   font-family: $font-family-montserrat-regular;
   color: $color-black-base;
+  margin: 0;
 }
 .contacts__item {
   max-width: 280px;
@@ -21,8 +22,8 @@ content: "";
 
 .contacts__address {
   position: relative;
-  margin-top: 0;
-  margin-bottom: 16px;
+  margin-top: 5px;
+  margin-bottom: 0;
   padding-left: 19px;
 
   font-style: normal;

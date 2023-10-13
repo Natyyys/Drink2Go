@@ -77,35 +77,39 @@
       <section class="slider swiper">
         <h2 class="visually-hidden">Новинки нашего ассортимента</h2>
         <ol class="slider__list swiper-wrapper">
-          <li class="slider__item slider__item--decaf swiper-slide">
-            <div class="slider__image-container">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="images/slider/flat-white-desktop.webp 1x, images/slider/flat-white-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/flat-white-tablet.webp 1x, images/slider/flat-white-tablet@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 320px)" srcset="images/slider/flat-white-mobile.webp 1x, images/slider/flat-white-mobile@2x.webp 2x">
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/slider/flat-white-desktop.png 1x, images/slider/flat-white-desktop@2x.png 2x" width="600" height="600">
-                <source type="image/png" media="(min-width: 768px)" srcset="images/slider/flat-white-tablet.png 1x, images/slider/flat-white-tablet@2x.png 2x" width="476" height="476">
-                <img class="slider__image" src="images/slider/flat-white-mobile.png" width="280" height="280" srcset="images/slider/flat-white-mobile@2x.png 2x" alt="Декаф Флэт Уайт.">
-              </picture>
-            </div>
-            <span class="slider__badge">Новинка!</span>
-            <h3 class="slider__title">Декаф Флэт Уайт</h3>
-            <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-            <div class="slider__price-container">
-              <del class="slider__price">295₽</del>
-              <span class="slider__price-discount">225₽</span>
-              <button class="slider__price-button button button--primary" type="button">Заказать</button>
+          <li class="slider__item swiper-slide slider__item--decaf">
+            <div class="slider__item-wrapper">
+              <div class="slider__image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/slider/flat-white-desktop.webp 1x, images/slider/flat-white-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/flat-white-tablet.webp 1x, images/slider/flat-white-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="images/slider/flat-white-mobile.webp 1x, images/slider/flat-white-mobile@2x.webp 2x">
+                  <source type="image/png" media="(min-width: 1440px)" srcset="images/slider/flat-white-desktop.png 1x, images/slider/flat-white-desktop@2x.png 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/slider/flat-white-tablet.png 1x, images/slider/flat-white-tablet@2x.png 2x">
+                  <img class="slider__image" src="images/slider/flat-white-mobile.png" width="280" height="280" srcset="images/slider/flat-white-mobile@2x.png 2x" alt="Декаф Флэт Уайт.">
+                </picture>
+              </div>
+              <div class="slider__inner-wrapper">
+                <span class="slider__badge">Новинка!</span>
+                <h3 class="slider__title">Декаф Флэт Уайт</h3>
+                <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком — то, что нужно<br> для расслабления после тяжёлого рабочего дня</p>
+                <div class="slider__price-container">
+                  <del class="slider__price">295₽</del>
+                  <span class="slider__price-discount">225₽</span>
+                  <button class="slider__price-button button button--primary" type="button">Заказать</button>
+                </div>
+              </div>
             </div>
           </li>
 
-          <li class="slider__item slider__item--lavender swiper-slide">
+          <li class="slider__item swiper-slide slider__item--lavender">
             <div class="slider__image-container">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="images/slider/lavender-desktop.webp 1x, images/slider/lavender-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/lavender-tablet.webp 1x, images/slider/lavender-tablet@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 320px)" srcset="images/slider/lavender-mobile.webp 1x, images/slider/lavender-mobile@2x.webp 2x">
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/slider/lavender-desktop.png 1x, images/slider/lavender-desktop@2x.png 2x" width="600" height="600">
-                <source type="image/png" media="(min-width: 768px)" srcset="images/slider/lavender-tablet.png 1x, images/slider/lavender-tablet@2x.png 2x" width="476" height="476">
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/slider/lavender-desktop.png 1x, images/slider/lavender-desktop@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/slider/lavender-tablet.png 1x, images/slider/lavender-tablet@2x.png 2x">
                 <img class="slider__image" src="images/slider/lavender-mobile.png" width="280" height="280" srcset="images/slider/lavender-mobile@2x.png 2x" alt="Лавандовый Латте.">
               </picture>
             </div>
@@ -119,14 +123,14 @@
             </div>
           </li>
 
-          <li class="slider__item slider__item--espresso swiper-slide">
+          <li class="slider__item swiper-slide slider__item--espresso">
             <div class="slider__image-container">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="images/slider/espresso-desktop.webp 1x, images/slider/espresso-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/espresso-tablet.webp 1x, images/slider/espresso-tablet@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 320px)" srcset="images/slider/espresso-mobile.webp 1x, images/slider/espresso-mobile@2x.webp 2x">
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/slider/espresso-desktop.png 1x, images/slider/espresso-desktop@2x.png 2x" width="600" height="600">
-                <source type="image/png" media="(min-width: 768px)" srcset="images/slider/espresso-tablet.png 1x, images/slider/espresso-tablet@2x.png 2x" width="476" height="476">
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/slider/espresso-desktop.png 1x, images/slider/espresso-desktop@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/slider/espresso-tablet.png 1x, images/slider/espresso-tablet@2x.png 2x">
                 <img class="slider__image" src="images/slider/espresso-mobile.png" width="280" height="280" srcset="images/slider/espresso-mobile@2x.png 2x" alt="Тройной Эспрессо.">
               </picture>
             </div>
