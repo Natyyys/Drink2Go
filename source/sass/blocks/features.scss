@@ -94,43 +94,6 @@
   gap: 4px;
   text-align: center;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 52px;
-    height: 56px;
-    top: 3px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    @media (min-width: $tablet-width) and (max-width: $only-tablet-width) {
-      top: 32px;
-      transform: translateY(-50%);
-      left: 0;
-    }
-    @media (min-width: $desktop-width) {
-      top: 0;
-    }
-  }
-
-  &--speed::after {
-    background-image: url("/images/speed.svg");
-  }
-
-  &--comfort::after {
-    background-image: url("/images/comfort.svg");
-  }
-
-  &--energy::after {
-    background-image: url("/images/energy.svg");
-  }
-
-  &--eco::after {
-    background-image: url("/images/ecology.svg");
-  }
-
   @media (min-width: $tablet-width) {
     width: 340px;
     text-align: start;
@@ -179,4 +142,24 @@
     padding: 0;
     text-align: center;
   }
+}
+
+.features__item-icon {
+    position: absolute;
+    width: 52px;
+    height: 56px;
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) and (max-width: $only-tablet-width) {
+      top: 32px;
+      transform: translateY(-50%);
+      left: 0;
+    }
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
 }

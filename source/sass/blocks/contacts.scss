@@ -5,47 +5,29 @@
 }
 
 .contacts__item {
-  //width: 280px;
+  position: relative;
 
   @media (min-width: $desktop-width) {
     width: 317px;
   }
 }
 
-.contacts__address::before,
-.contacts__phone::before {
-position: absolute;
-top: 1px;
-left: 0;
-
-width: 13px;
-height: 16px;
-background-position: center;
-background-repeat: no-repeat;
-content: "";
-}
-
 .contacts__address {
-  position: relative;
   margin-top: 5px;
   margin-bottom: 0;
   padding-left: 19px;
-
   font-style: normal;
-
-  &::before {
-    background-image: url("/images/mark.svg");
-  }
 }
 
 .contacts__phone {
-  position: relative;
   padding-left: 19px;
-
   color: $color-black-base;
   text-decoration: none;
+}
 
-  &::before {
-    background-image: url("/images/phone.svg");
-  }
+.contacts__address-logo,
+.contacts__phone-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
