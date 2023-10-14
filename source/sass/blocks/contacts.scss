@@ -3,8 +3,13 @@
   color: $color-black-base;
   margin: 0;
 }
+
 .contacts__item {
-  max-width: 280px;
+  //width: 280px;
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+  }
 }
 
 .contacts__address::before,

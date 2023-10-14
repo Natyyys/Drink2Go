@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 60px 20px 96px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 40px 120px;
+  }
 }
 
 .features__title {
@@ -16,6 +20,14 @@
   margin: 0;
   padding: 0;
   margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 728px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1360px;
+  }
 }
 
 .features__subtitle {
@@ -27,15 +39,16 @@
   padding: 0;
   margin-bottom: 36px;
 
+
   @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 64px;
-    width: 730px;
     margin-bottom: 60px;
+    width: 728px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 1360px;
     padding: 0 50px;
     margin: 0 auto;
     margin-bottom: 80px;
@@ -67,7 +80,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 1360px;
     gap: 30px;
     justify-content: space-between;
   }
@@ -127,7 +140,7 @@
     width: 317px;
     height: auto;
     gap: 10px;
-    padding-top: 72px;
+    padding-top: 78px;
   }
 }
 
@@ -163,7 +176,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 10px;
+    padding: 0;
     text-align: center;
   }
 }

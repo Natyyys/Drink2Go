@@ -18,6 +18,7 @@
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     margin: 0 auto;
+    width: 728px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,6 +31,7 @@
 }
 
 .catalog__title {
+  width: 280px;
   font-family: $font-family-montserrat-bold;
   font-size: 12px;
   line-height: 16px;
@@ -38,6 +40,14 @@
   margin: 0;
   padding: 0;
   margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 728px;;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1360px;
+  }
 }
 
 .catalog__subtitle {
@@ -52,8 +62,14 @@
   @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 64px;
-    width: 730px;
+    width: 728px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1360px;
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
 }
 
@@ -79,5 +95,9 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2 /-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
