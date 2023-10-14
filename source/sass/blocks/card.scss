@@ -1,7 +1,7 @@
 .cards {
   @media (max-width: $mobile-width-only) {
-  width: 280px;
-  margin: 0 auto;
+    width: 280px;
+    margin: 0 auto;
   }
 
   @media (max-width: $only-tablet-width) {
@@ -47,7 +47,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 60px;
-
   }
 }
 
@@ -64,7 +63,6 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
   }
-
 }
 
 .cards-info {
@@ -111,14 +109,14 @@
   align-items: center;
 }
 
-.cards-price{
+.cards-price {
   font-family: $font-family-montserrat-semi-bold;
   font-size: 20px;
   line-height: 32px;
 }
 
 .cards-button {
-  padding:8px 20px;
+  padding: 8px 20px;
   border: none;
   font-family: $font-family-montserrat-regular;
   font-size: 14px;

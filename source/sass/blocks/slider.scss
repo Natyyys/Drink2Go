@@ -130,7 +130,7 @@
   }
 }
 
-.slider__inner-wrapper{
+.slider__inner-wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
@@ -263,9 +263,8 @@
     }
 
     @media (min-width: $tablet-width) {
-        left: 26px;
+      left: 26px;
     }
-
   }
 }
 

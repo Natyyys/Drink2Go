@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Интернет магазин кофейных напитков Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/favicons/apple-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="preload" href="fonts/montserrat400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat500.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat600.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -154,6 +154,7 @@
               </div>
             </div>
           </li>
+        </ol>
 
           <button class="slider__button slider__button--prev swiper-button-prev" type="button">
             <span class="visually-hidden">Предыдущий слайд.</span>
@@ -161,7 +162,7 @@
           <button class="slider__button slider__button--next swiper-button-next" type="button">
             <span class="visually-hidden">Следующий слайд.</span>
           </button>
-        <div class="slider__pagination swiper-pagination"></div>
+          <div class="slider__pagination swiper-pagination"></div>
       </section>
 
 
@@ -213,10 +214,10 @@
                 <div class="range">
                   <div class="range__scale">
                     <div class="range__bar" style="left: 0; right: 90%;">
-                      <button type="button" class="range__toggle range__toggle--min">
+                      <button class="range__toggle range__toggle--min" type="button">
                         <span class="visually-hidden">Изменение минимального значения стоимости.</span>
                       </button>
-                      <button type="button" class="range__toggle range__toggle--max">
+                      <button class="range__toggle range__toggle--max" type="button">
                         <span class="visually-hidden">Изменение максимального значения стоимости.</span>
                       </button>
                     </div>
@@ -327,7 +328,7 @@
           <div class="catalog__cards">
             <div class="select">
               <span class="select__title">Сортировка:</span>
-              <select class="select__control" aria-label="Сортировка">
+              <select class="select__control" name="sorting"  aria-label="Сортировка">
                 <option value="default">по умолчанию</option>
                 <option value="cheap">дешевые</option>
                 <option value="popular">популярные</option>
@@ -469,7 +470,7 @@
             <div class="pagination">
               <ul class="pagination__list">
                 <li class="pagination__item">
-                  <a class="pagination__link pagination__link--arrow">
+                  <a class="pagination__link pagination__link--arrow" href="#">
                     <svg class="pagination__link-icon" aria-hidden="true" focusable="false" width="10" height="6">
                       <use href="images/icons/stack.svg#arrow-forward"></use>
                     </svg>
@@ -486,7 +487,7 @@
                   <a class="pagination__link" href="#">3</a>
                 </li>
                 <li class="pagination__item">
-                  <a class="pagination__link pagination__link--arrow">
+                  <a class="pagination__link pagination__link--arrow" href="#">
                     <svg class="pagination__link-icon" aria-hidden="true" focusable="false" width="10" height="6">
                       <use href="images/icons/stack.svg#arrow-back"></use>
                     </svg>
@@ -620,6 +621,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="js/scripts.js" type="module"></script>
+    <script src="./js/scripts.js" type="module"></script>
   </body>
 </html>

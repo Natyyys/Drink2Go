@@ -27,12 +27,12 @@
 
   &:hover,
   &:focus {
-      background-color: $color-base-secondary;
-      fill: $color-base-primary;
+    background-color: $color-base-secondary;
+    fill: $color-base-primary;
   }
 
   &:active {
-      background-color: $color-primary-opacity;
-      fill: $color-base-primary;
+    background-color: $color-primary-opacity;
+    fill: $color-base-primary;
   }
 }

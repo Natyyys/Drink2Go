@@ -32,15 +32,10 @@
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
-  padding: 0;
   border: none;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 

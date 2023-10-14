@@ -145,21 +145,22 @@
 }
 
 .features__item-icon {
-    position: absolute;
-    width: 52px;
-    height: 56px;
-    top: 3px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-repeat: no-repeat;
-    background-size: contain;
+  position: absolute;
+  width: 52px;
+  height: 56px;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+  background-size: contain;
 
-    @media (min-width: $tablet-width) and (max-width: $only-tablet-width) {
-      top: 32px;
-      transform: translateY(-50%);
-      left: 0;
-    }
-    @media (min-width: $desktop-width) {
-      top: 0;
-    }
+  @media (min-width: $tablet-width) and (max-width: $only-tablet-width) {
+    top: 32px;
+    transform: translateY(-50%);
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
 }
