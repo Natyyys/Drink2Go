@@ -22,10 +22,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1360px;
     display: grid;
     grid-template-columns: 318px 1011px;
     gap: 30px;
-    width: $desktop-width;
     margin: 0 auto;
   }
 }
