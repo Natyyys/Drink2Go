@@ -17,7 +17,7 @@
   </head>
 
   <body class="page-wrapper">
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <div class="main-header__container">
         <div class="main-header__logo-container">
           <a class="main-header__logo" href="index.html">
@@ -31,7 +31,7 @@
         </div>
 
         <nav class="main-nav main-nav--nojs">
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+          <button class="main-nav__toggle js-toggle-button" type="button" aria-label="Открыть меню">
             <span class="main-nav__toggle-icon"></span>
           </button>
 
@@ -77,7 +77,7 @@
     <main class="main-container">
       <h1 class="visually-hidden">Интернет магазин кофейных напитков Drink2Go</h1>
 
-      <section class="slider swiper">
+      <section class="slider swiper" data-test="hero">
         <h2 class="visually-hidden">Новинки нашего ассортимента</h2>
         <ol class="slider__list swiper-wrapper">
           <li class="slider__item swiper-slide slider__item--decaf">
@@ -156,17 +156,17 @@
           </li>
         </ol>
 
-          <button class="slider__button slider__button--prev swiper-button-prev" type="button">
+          <button class="slider__button slider__button--prev swiper-button-prev slider-button-prev" type="button">
             <span class="visually-hidden">Предыдущий слайд.</span>
           </button>
-          <button class="slider__button slider__button--next swiper-button-next" type="button">
+          <button class="slider__button slider__button--next swiper-button-next slider-button-next" type="button">
             <span class="visually-hidden">Следующий слайд.</span>
           </button>
-          <div class="slider__pagination swiper-pagination"></div>
+          <div class="slider__pagination swiper-pagination slider-pagination"></div>
       </section>
 
 
-      <section class="features">
+      <section class="features" data-test="features">
         <h2 class="features__title">Преимущества</h2>
         <h3 class="features__subtitle">Главные причины выбрать Drink2Go</h3>
         <ul class="features__list">
@@ -201,7 +201,7 @@
         </ul>
       </section>
 
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <h2 class="catalog__title">Каталог</h2>
         <h3 class="catalog__subtitle">Каталог кофейных напитков</h3>
         <div class="catalog__wrapper">
@@ -500,7 +500,7 @@
         </div>
       </section>
 
-      <div class="map">
+      <div class="map" data-test="map">
         <h2 class="visually-hidden">Расположение интернет-магазин «Drink2Go» на карте</h2>
         <picture>
           <source type="image/webp" media="(min-width: 1440px)" srcset="images/map/map-desktop.webp 1x, images/map/map-desktop@2x.webp 2x">
@@ -513,7 +513,7 @@
       </div>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <h2 class="visually-hidden">Полезная информация</h2>
       <div class="main-footer__info main-footer__info--large">
         <div class="main-footer__wrapper">
