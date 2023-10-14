@@ -10,32 +10,13 @@
 .user-list__item {
   width: 60px;
   min-height: 60px;
-  padding: 22px;
-
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     min-height: 80px;
-    padding: 32px 22px;
   }
 
   @media (min-width: $desktop-width) {
     width: unset;
-    padding: 32px 20px;
-  }
-
-  &:active {
-    @media (min-width: $mobile-width) {
-      background-color: $color-base-secondary;
-    }
-  }
-
-  &:active .user-list__link,
-  &:hover .user-list__link,
-  &:focus .user-list__link {
-    @media (min-width: $tablet-width) {
-      color: $color-base-primary;
-    }
   }
 }
 
@@ -43,23 +24,43 @@
   display: block;
   min-width: 16px;
   min-height: 16px;
+  padding: 22px;
   color: $color-black-base;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:active {
+    background-color: $color-base-secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 22px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 16px 1fr;
     column-gap: 8px;
-
+    padding: 32px 20px;
     font-size: 12px;
     line-height: 16px;
     font-weight: 500;
+
+    &:hover,
+    &:focus {
+      color: $color-base-primary;
+    }
+
+    &:active {
+      color: $color-base-primary;
+      background-color: $color-base-secondary;
+    }
   }
 }
 
 .user-list__icon {
   display: block;
+  fill: currentColor;
 }
 
 .user-list__text {
