@@ -74,10 +74,10 @@
   color: $color-base_primary;
   margin: 0;
   padding: 0;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 }
 
@@ -115,8 +115,10 @@
 }
 
 .main-footer__logo-image {
+  padding-top: 2px;
   @media (min-width: $desktop-width) {
     margin-bottom: 10px;
+    padding: 0;
   }
 }
 
