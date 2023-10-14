@@ -5,3 +5,16 @@
   color: transparent;
 }
 
+.swiper-pagination-horizontal .swiper-pagination-bullet {
+  @media (min-width: $desktop-width) {
+    width: 62px;
+    height: 4px;
+    border-radius: 0;
+    background-color: $color-white-base;
+    opacity: 1;
+
+    &-active {
+      background-color: $color-base-primary;
+    }
+  }
+}

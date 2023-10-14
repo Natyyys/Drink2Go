@@ -24,7 +24,7 @@
   min-height: 635px;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 20px 0;
+    padding: 56px 20px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,6 +78,7 @@
   margin: 0 auto;
   margin-bottom: 20px;
   max-width: $mobile-width;
+  min-height: 100px;
 
   @media (max-width: $mobile-width-only) {
     br {
@@ -219,14 +220,6 @@
     color: $color-base-grey;
   }
 
-  @media (min-width: $tablet-width) {
-    width: 80px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 20px;
-  }
-
   &::after {
     content: "";
     position: absolute;
@@ -248,38 +241,64 @@
       top: 330px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 714px;
+  }
 }
 
 .slider__button--prev {
   left: 0;
 
   &::after {
-    left: -3px;
-    top: 15px;
+    left: 50%;
+    top: 50%;
     transform: rotate(226deg);
-
-    @media (min-width: $tablet-width) {
-      top: -78px;
-    }
-
-    @media (min-width: $tablet-width) {
-      left: 26px;
-    }
   }
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(90deg, $color-white-base 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(
+      90deg,
+      rgba(120, 89, 207, 0.25) 0%,
+      rgba(120, 89, 207, 0) 100%
+    );
+  }
+}
+
+.slider__button--next .slider__button-icon {
+  transform: rotate(180deg);
 }
 
 .slider__button--next {
   right: 0;
 
   &::after {
-    right: -3px;
-    top: 15px;
+    right: 50%;
+    top: 50%;
     transform: rotate(46deg);
+  }
 
-    @media (min-width: $tablet-width) {
-      top: -78px;
-      right: 26px;
-    }
+  &:hover,
+  &:focus {
+    background: linear-gradient(270deg, $color-white-base 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(
+      270deg,
+      rgba(120, 89, 207, 0.25) 0%,
+      rgba(120, 89, 207, 0) 100%
+    );
   }
 }
 
