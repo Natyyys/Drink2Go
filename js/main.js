@@ -1,0 +1,1 @@
+function loadScript(e){let c=document.createElement("script");c.src=e,c.async=!1,document.body.append(c)}loadScript("js/swiper-bundle.js"),loadScript("js/swiper.js"),loadScript("js/menu.js");
