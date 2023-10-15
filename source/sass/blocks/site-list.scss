@@ -35,16 +35,16 @@
     }
   }
 
-  &:active {
-    @media (min-width: $mobile-width) {
-      background-color: $color-base-secondary;
+  &:hover,
+  &:focus {
+    @media (min-width: $tablet-width) {
+      color: $color-base-primary;
     }
   }
 
-  &:active .site-list__link,
-  &:hover .site-list__link,
-  &:focus .site-list__link {
-    @media (min-width: $tablet-width) {
+  &:active {
+    @media (min-width: $mobile-width) {
+      background-color: $color-base-secondary;
       color: $color-base-primary;
     }
   }
