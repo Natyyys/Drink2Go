@@ -1,6 +1,4 @@
 /* в этот файл добавляет скрипты*/
-import './slider.js'
-
 let navMain = document.querySelector(".main-nav");
 let navToggle = document.querySelector(".main-nav__toggle");
 
